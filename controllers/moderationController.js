@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const apiKey = "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";
+const apiKey = process.env.API;
 
 const getModerationStatus = async (req, res) => {
   const { text } = req.body;
