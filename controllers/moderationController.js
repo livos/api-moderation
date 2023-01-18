@@ -1,6 +1,8 @@
+import dotenv from "dotenv";
+dotenv.config();
 import axios from "axios";
 
-const apiKey = process.env.API;
+const apiKey = process.env.OPENAI_API_KEY;
 
 const getModerationStatus = async (req, res) => {
   const { text } = req.body;
