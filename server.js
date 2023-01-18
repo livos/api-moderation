@@ -12,7 +12,6 @@ const app = express();
 app.use(express.json());
 
 const port = process.env.PORT || 5000;
-console.log(process.env.OPENAI_API_KEY);
 
 app.use("/api/v1/moderate", moderateRouter);
 
